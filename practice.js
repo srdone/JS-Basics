@@ -41,7 +41,11 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
+  var welcome = function() {
+    alert(getName());
+  };
 
+  welcome();
 
 //Next problem
 
@@ -54,6 +58,15 @@ var name = 'Tyler';
 
   //Code Here
 
+  var adder = function() {
+    var result = 0;
+    for (var i = 0; i < arguments.length; i++) {
+      result += arguments[i];
+    }
+    return result;
+  };
+
+  adder(1,2,3,4,5);
 
 //Next Problem
 
