@@ -75,6 +75,8 @@ var name = 'Tyler';
 //What is the difference between arguments and parameters?
 
   //Answer Here
+  //Arguments are the actual values that you pass into the function.
+  //Parameters are the placehodlers - the variables that the function uses to reference the passed in parameters.
 
 
 //Next problem
@@ -85,6 +87,10 @@ var name = 'Tyler';
 
 
   //Answer Here
+  //Falsy values are undefined, NaN, '', 0, null, false
+  //To check if something is falsy just do an if statement with the variable name in parens
+  //Example: if you want to test the variable 'name' do:
+  // if (name) {}
 
 
 
@@ -95,13 +101,18 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
+  var myName = function() {
+    return 'Stephen Done';
+  };
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+  var newMyName = myName;
 
 //Now alert the result of invoking newMyName
 
+  alert(newMyName());
 
 
 //Next problem
