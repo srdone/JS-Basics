@@ -42,7 +42,8 @@ var name = 'Tyler';
 
   //Code Here
   var welcome = function() {
-    alert(getName());
+    var name = getName();
+    alert('Welcome' + ' ' + name);
   };
 
   welcome();
@@ -140,3 +141,15 @@ var name = 'Tyler';
 //Now invoke innerFn.
   innerFn();
 
+
+//Closure example:
+var makeMessageAlert = function (message, name) {
+  var messageAlert = function() {
+    alert(message + ' ' + name);
+  };
+  return messageAlert;
+};
+
+var alertStephenWarn = makeMessageAlert('Watch out', 'Stephen');
+
+alertStephenWarn();
