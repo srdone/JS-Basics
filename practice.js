@@ -26,6 +26,11 @@ var name = 'Tyler';
 
 
   //Code Here
+  var getName = function() {
+    return prompt('What is your name?');
+  };
+
+  getName();
 
 
 //Next Problem
