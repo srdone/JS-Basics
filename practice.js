@@ -6,6 +6,16 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
+  var isTyler = function(name) {
+    if (name === 'Tyler') {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  console.log(isTyler('Tyler'));
+  console.log(isTyler('Stephen'));
 
 
 //Next problem
