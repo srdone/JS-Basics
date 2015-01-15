@@ -68,6 +68,10 @@ var name = 'Tyler';
 
   adder(1,2,3,4,5);
 
+  var addXToadder = function(x) {
+    return adder(x, arguments);
+  };
+
 //Next Problem
 
 
@@ -122,9 +126,17 @@ var name = 'Tyler';
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
+  var outerFn = function() {
+    return function() {
+      return 'Stephen Done';
+    };
+  };
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
+  var innerFn = outerFn();
 
 //Now invoke innerFn.
+  innerFn();
+
