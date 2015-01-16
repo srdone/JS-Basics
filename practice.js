@@ -94,8 +94,10 @@ var name = 'Tyler';
   //Answer Here
   //Falsy values are undefined, NaN, '', 0, null, false
   //To check if something is falsy just do an if statement with the variable name in parens
+  //Give it actions for false/true. If the value is truthy the true portion of the
+  //if statement runs. If the value is falsey the false portion of the if statement will run
   //Example: if you want to test the variable 'name' do:
-  // if (name) {}
+  // if (name) { console.log(true)} else { console.log(false)}
 
 
 
